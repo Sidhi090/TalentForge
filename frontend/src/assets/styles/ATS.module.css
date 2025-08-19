@@ -1,0 +1,393 @@
+/* ATS Checker Page Styles */
+:root {
+  --primary: #004030;
+  --primary-dark: #002820;
+  --secondary: #4A9782;
+  --accent: #DCD0A8;
+  --background: #FFF9E5;
+  --text: #2D3748;
+  --text-light: #718096;
+  --white: #FFFFFF;
+  --gray-light: #F7FAFC;
+  --border-radius: 12px;
+  --box-shadow: 0 10px 25px rgba(0, 64, 48, 0.1);
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.atsContainer {
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 1640px;
+}
+
+.atsHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.atsHeader h1 {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.atsHeader p {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.uploadArea {
+  border: 2px dashed var(--secondary);
+  border-radius: var(--border-radius);
+  padding: 3rem 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: var(--transition);
+  background-color: rgba(74, 151, 130, 0.05);
+  margin-bottom: 2rem;
+}
+
+.uploadArea:hover {
+  background-color: rgba(74, 151, 130, 0.1);
+  border-color: var(--primary);
+}
+
+.fileSelected {
+  border: 2px solid var(--secondary);
+  background-color: rgba(74, 151, 130, 0.1);
+}
+
+.uploadIcon {
+  font-size: 3rem;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.fileIcon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.supportedFormats {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.changeFileBtn {
+  background: none;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 1rem;
+}
+
+.changeFileBtn:hover {
+  background-color: rgba(74, 151, 130, 0.1);
+}
+
+.analysisControls {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.analyzeBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  min-width: 200px;
+}
+
+.analyzeBtn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--box-shadow);
+}
+
+.analyzeBtn:disabled {
+  background-color: var(--secondary);
+  cursor: not-allowed;
+}
+
+.disclaimer {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+
+/* Results Section */
+.resultsContainer {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.scoreCard {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.scoreCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: conic-gradient(var(--secondary) 0% 87%, var(--accent) 87% 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.scoreValue {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.scoreLabel {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.scoreDescription {
+  flex: 1;
+  min-width: 300px;
+}
+
+.scoreDescription h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.scoreDescription p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.strengthsCard, .improvementsCard, .keywordsCard, .suggestionsCard {
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
+.strengthsCard h4, .improvementsCard h4, .keywordsCard h4, .suggestionsCard h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.strengthsCard ul, .improvementsCard ul, .suggestionsCard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.strengthsCard li, .improvementsCard li, .suggestionsCard li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.strengthIcon {
+  color: var(--secondary);
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.improvementIcon {
+  color: #e53e3e;
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.keywordTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keywordTag {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.match {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.missing {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+.downloadTemplateBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.downloadTemplateBtn:hover {
+  background-color: var(--primary-dark);
+}
+
+.downloadIcon {
+  font-size: 1.1rem;
+}
+
+.newAnalysis {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.newAnalysisBtn {
+  background: none;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.newAnalysisBtn:hover {
+  background-color: rgba(74, 151, 130, 0.1);
+}
+
+/* Info Section */
+.atsInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.infoCard, .tipsCard {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+}
+
+.infoCard h3, .tipsCard h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.infoCard p, .tipsCard p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.infoCard ul {
+  padding-left: 1.2rem;
+}
+
+.infoCard li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.tipItem {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tipNumber {
+  background-color: var(--primary);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .atsContainer {
+    padding: 1.5rem;
+  }
+  
+  .atsHeader h1 {
+    font-size: 2rem;
+  }
+  
+  .scoreCard {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .scoreDescription {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .atsHeader h1 {
+    font-size: 1.8rem;
+  }
+  
+  .uploadArea {
+    padding: 2rem 1rem;
+  }
+  
+  .resultsGrid {
+    grid-template-columns: 1fr;
+  }
+}
