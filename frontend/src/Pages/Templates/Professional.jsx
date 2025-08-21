@@ -3,10 +3,10 @@ import { saveAs } from 'file-saver';
 import * as htmlToImage from 'html-to-image';
 import { jsPDF } from 'jspdf';
 import Select from 'react-select';
-import { makeStyles } from '@material-ui/core/styles';
-import { Button, Container, Grid, Paper, TextField, Typography } from '@material-ui/core';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import EditIcon from '@material-ui/icons/Edit';
+import { makeStyles } from "@mui/styles";
+import { Button, Container, Grid, Paper, TextField, Typography } from "@mui/material";
+import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
+import EditIcon from "@mui/icons-material/Edit";
 import Modern from "../Templates/Modern";
 
 // Define the template components first

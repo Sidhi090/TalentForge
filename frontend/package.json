@@ -10,18 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^4.3.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^7.3.1",
+    "@mui/material": "^7.3.1",
+    "@mui/styles": "^6.4.8",
     "file-saver": "^2.0.5",
-    "framer-motion": "^12.23.12",
-    "gsap": "^3.13.0",
+    "html-to-image": "^1.11.13",
+    "jspdf": "^3.0.1",
     "react": "^19.1.1",
-    "react-awesome-resume": "^0.1.0",
     "react-dom": "^19.1.1",
-    "react-hook-form": "^7.62.0",
     "react-icons": "^5.5.0",
-    "react-resume": "^0.0.11",
-    "react-router-dom": "^7.8.1",
-    "react-to-print": "^3.1.1"
+    "react-router-dom": "^6.30.1",
+    "react-select": "^5.10.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
