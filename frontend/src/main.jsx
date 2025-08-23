@@ -8,7 +8,7 @@ import { Landing } from "./Pages/LandingPage/Landing";
 import Signup from "./Pages/Auth/signup";
 import { Login } from "./Pages/Auth/Login";
 import ATS from "./Pages/ATS CHECKER/ATS";
-import Resume from "./Pages/ResumeBuilder/ResumeBuilder";
+import Resume from "./Pages/ResumeBuilder/Resume";
 import Professional from "./Pages/Templates/Professional";
 import Modern from "./Pages/Templates/Modern";
 
@@ -23,8 +23,7 @@ function MainApp() {
         <Route path="/login" element={<Login />} />
         <Route path="/ATS" element={<ATS />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/templates/professional" element={<Professional />} />
-        <Route path="/templates/modern" element={<Modern />} />
+       
       </Routes>
     </BrowserRouter>
   );

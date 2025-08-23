@@ -4,6 +4,7 @@
     "@dicebear/core": "^9.2.4",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "@mui/styles": "^6.5.0",
     "html-to-image": "^1.11.13",
     "jspdf": "^3.0.1",
     "react": "^19.1.1",

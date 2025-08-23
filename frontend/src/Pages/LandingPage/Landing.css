@@ -13,9 +13,7 @@
   --box-shadow: 0 10px 25px rgba(0, 64, 48, 0.1);
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-html, body {
-  overflow-x: hidden;
-}
+
 
 .landing-container {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
