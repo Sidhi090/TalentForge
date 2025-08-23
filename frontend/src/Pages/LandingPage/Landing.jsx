@@ -55,7 +55,7 @@ export const Landing = () => {
       <span className="hero-title-line">Across the Globe</span>
     </h1>
     <p className="hero-subtitle">
-      Our platform bridges the gap between <span className="highlight-text">top talent</span> and <span className="highlight-text">dream opportunities</span> in real-time, with the scale to power career transformations worldwide.
+      This platform bridges the gap between <span className="highlight-text">top talent</span> and <span className="highlight-text">dream opportunities</span> in real-time, with the scale to power career transformations worldwide.
     </p>
     <div className="cta-buttons">
       <button className="primary-btn">Join the Network</button>
