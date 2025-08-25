@@ -69,7 +69,7 @@ const Navbar = () => {
                   <div className="dropdown-content">
                     <h5>Resume Builder</h5>
                     <p>Create ATS-friendly resumes easily.</p>
-                    <button className="dropdown-btn" onClick={() => window.location.href='/resume'}>
+                    <button className="dropdown-btn" onClick={() => window.location.href='/starting'}>
                       Try Now
                     </button>
                   </div>
