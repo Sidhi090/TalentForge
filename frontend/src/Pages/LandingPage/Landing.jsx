@@ -105,8 +105,8 @@ export const Landing = () => {
       </section>
       {/* Interactive Resume Viewer */}
       <section className="resume-viewer-section">
-        <div className="section-container">
-          <h2 className="section-title">Smart Resume Experience</h2>
+        <div className="section-container2">
+          <h2 className="section-title2">Smart Resume Experience</h2>
           <p className="section-subtitle">Create, optimize, and preview your resume all in one place</p>
           
           <div className="resume-viewer-container">
